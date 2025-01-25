@@ -1,0 +1,2 @@
+middleware.Logger() 
+    ใช้สำหรับบันทึกข้อมูลการเข้าถึง (request logging) เพื่อแสดงรายละเอียดเกี่ยวกับคำขอที่เข้ามาในระบบ เช่น เวลาในการประมวลผล, HTTP status code, URL, HTTP method และข้อมูลอื่นๆ ที่เกี่ยวข้องกับ request และ response
