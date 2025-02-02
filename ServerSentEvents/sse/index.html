@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>Getting server-sent updates</h1>
+    <div id="result"></div>
+    <script>
+        if(typeof(EventSource) !== "underfined"){
+            const source = new EventSource("/sse");
+            source.onmessage = function(event){
+                document.getElementById("result").innerHTML += event.data + "<br>";
+            };
+        }else{
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events..."; 
+        }
+    </script>
+    
+</body>
+</html>
